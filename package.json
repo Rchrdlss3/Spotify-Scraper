@@ -1,0 +1,31 @@
+{
+  "name": "spotify-scraper",
+  "version": "1.0.0",
+  "description": "Used for obtaining streams from artist",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rchrdlss3/Spotify-Scraper.git"
+  },
+  "keywords": [
+    "spotify",
+    "artist",
+    "streams"
+  ],
+  "author": "Rchrdlss3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rchrdlss3/Spotify-Scraper/issues"
+  },
+  "homepage": "https://github.com/Rchrdlss3/Spotify-Scraper#readme",
+  "devDependencies": {
+    "puppeteer": "^23.10.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
