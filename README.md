@@ -1,6 +1,6 @@
 <div style= "margin: 5px; text-align: center;">
-<img style = "display: inline-block; vertical-align: middle" src= "https://rchrdlss3.github.io/spotify_scrape_images/logos/spotifyscrape.png" width = 200 />
 <h1 style= "display: inline-block; vertical-align: middle; color: #1DB954; font-size: 95;">Spotify Scraper</h1>
+<img style = "display: inline-block; vertical-align: middle" src= "https://rchrdlss3.github.io/spotify_scrape_images/logos/spotifyscrape.png" width = 200 />
 </div>
 
 > [!WARNING]
