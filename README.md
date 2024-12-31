@@ -1,16 +1,14 @@
-<div style= "margin: 5px; text-align: center;">
-<h1 style= "display: inline-block; vertical-align: middle; color: #1DB954; font-size: 95;">Spotify Scraper</h1>
-<img style = "display: inline-block; vertical-align: middle" src= "https://rchrdlss3.github.io/spotify_scrape_images/logos/spotifyscrape.png" width = 200 />
-</div>
+<img style = "display: inline-block; vertical-align: middle" src= "https://rchrdlss3.github.io/spotify_scrape_images/logos/spotifyscrape2.png"/>
 
+# Spotify Scraper
 > [!WARNING]
 > Package is NOT for commercial use and is intended solely for non-profit, educational, and recreational purposes. 
 
 <!--Work in Progress-->
 ## Overview
-Obtain data from Spotify regarding your favorite artist or album. Utilizes Puppeteer.
+Obtain data from Spotify regarding your favorite artist or album. Utilizes [Puppeteer](https://www.npmjs.com/package/puppeteer).
 ## Install
-``npm i spotify-scrape``
+``npm i spotify-scraper``
 
 ## Dependencies
 
@@ -23,18 +21,23 @@ getTotalStreams| getTotalStreams([TracksV2]()) | ([TracksV2]()) => number | Take
 
 ## Demo
 ```c
-import { getArtist , getAlbum, getTotalStreams } from "spotify-scraper"
-
+import { getArtist } from "spotify-scraper"
 //Take a look at artist
-    const nirvana = await getAritst('6olE6TJLqED3rqDCT0FyPh');
+    const nirvana = await getArtist('6olE6TJLqED3rqDCT0FyPh');
     console.log(nirvana)
-
+```
+[Click for expected response](readme/responseExamples.md#arist)
+```c
 // Get an artist releases
+import { getArtist } from "spotify-scraper"
     const aliciaKeys = await getArtist('3DiDSECUqqY1AuBP8qtaIa');
 
     const aliciaKeysAlbums = aliciaKeys.data.artistUnion.discography.albums.items;
     aliciaKeysAlbums.forEach(album => album.releases.items.forEach(release => console.log(release)));
-
+```
+[Click for expected response](readme/responseExamples.md#get-artist-releases)
+```c
+import { getAlbum, getTotalStreams } from "spotify-scraper"
 // Get album
     const cowboyCarterAlbum = await getAlbum('6BzxX6zkDsYKFJ04ziU5xQ');
 // Take a look at albumUnion
@@ -43,6 +46,10 @@ import { getArtist , getAlbum, getTotalStreams } from "spotify-scraper"
     console.log(getTotalStreams(cowboyCarterAlbum.data.albumUnion.tracksV2));
 
 ```
+[Click for expected response](readme/responseExamples.md#get-album)
 
 ## Models
-<!--WIP -->
+[AlbumData](readme/Interface.md#albumdata)
+
+[Artist](readme/Interface.md#artist-data)
+
