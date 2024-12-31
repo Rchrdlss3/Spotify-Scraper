@@ -26,7 +26,7 @@ import { getArtist } from "spotify-scraper"
     const nirvana = await getArtist('6olE6TJLqED3rqDCT0FyPh');
     console.log(nirvana)
 ```
-[Click for expected response](readme/responseExamples.md#arist)
+[Click for expected response](readME/responseExamples.md#arist)
 ```c
 // Get an artist releases
 import { getArtist } from "spotify-scraper"
@@ -35,7 +35,7 @@ import { getArtist } from "spotify-scraper"
     const aliciaKeysAlbums = aliciaKeys.data.artistUnion.discography.albums.items;
     aliciaKeysAlbums.forEach(album => album.releases.items.forEach(release => console.log(release)));
 ```
-[Click for expected response](readme/responseExamples.md#get-artist-releases)
+[Click for expected response](readME/responseExamples.md#get-artist-releases)
 ```c
 import { getAlbum, getTotalStreams } from "spotify-scraper"
 // Get album
@@ -46,10 +46,10 @@ import { getAlbum, getTotalStreams } from "spotify-scraper"
     console.log(getTotalStreams(cowboyCarterAlbum.data.albumUnion.tracksV2));
 
 ```
-[Click for expected response](readme/responseExamples.md#get-album)
+[Click for expected response](readME/responseExamples.md#get-album)
 
 ## Models
-[AlbumData](readme/Interface.md#albumdata)
+[AlbumData](readME/Interface.md#albumdata)
 
-[Artist](readme/Interface.md#artist-data)
+[Artist](readME/Interface.md#artist-data)
 
